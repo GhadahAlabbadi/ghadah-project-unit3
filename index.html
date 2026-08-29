@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✈️ SkyRoute Travel ✈️</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <section class="first-row-header">
+            <img class="logo-img" src="images/SkyRoute-Travel-Logo.png" alt="Travel Agency Logo">
+            <nav id="header-nav">
+                <a class="active" href="">Home</a>
+                <a href="#destinations">Destinations</a>
+                <a href="#about-section">About</a>
+                <a href="#contact">Contact Us</a>
+            </nav>
+            <a id="book-button" href="book-now.html">Book Now</a>
+        </section>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Explore the world<br>with confidence</h1>
+                <p>From dreamy getaways to unforgettable adventures,<br>we make your travel smooth, safe, and truly memorable.</p>
+                <div class="hero-buttons">
+                    <button id="plan-trip-button">Plan My Trip<img src="images/right-arrow-dark-blue.png" alt="Right Arrow Icon" width="20px" height="20px"></button>
+                    <button id="view-dest-button">View Destinations<img src="images/location-pin.png" alt="Location Pin Icon" width="20px" height="20px"></button>
+                </div>
+            </div>
+            <div class="hero-images">
+                <img id="main-airplane" src="images/blue-airplane.png" alt="Airplane Image">
+                <img id="travel-img" src="images/travel-image2.png" alt="Planet Image">
+            </div>
+        </section>
+    </header>
+    <main>
+        <h2 class="services-title">Our Services</h2>
+        <section class="services-grid">
+            <article>
+                <div class="service-icon">
+                    <img class="card-images" src="images/airplane-icon.png" alt="Airplane Icon">
+                </div>
+                <div class="service-content">
+                    <h3>Flight Booking</h3>
+                    <p>Find the best flights at unbeatable prices with flexible options and easy booking.</p>
+                    <button id="flight-booking-btn" class="without-bb-buttons">Book Flights<img src="images/right-arrow-blue.png" alt="Right Arrow Icon" width="20px" height="20px"></button>
+                </div>
+            </article>
+            <article>
+                <div class="service-icon">
+                    <img class="card-images" src="images/route-icon.png" alt="Tour Icon">
+                </div>
+                <div class="service-content">
+                    <h3>Custom Tours</h3>
+                    <p>Personalized itineraries crafted just for you. Unique experiences, your way.</p>
+                    <button id="custom-tours-btn" class="without-bb-buttons">Explore Tours<img src="images/right-arrow-purple.png" alt="Right Arrow Icon" width="20px" height="20px"></button>
+                </div>
+            </article>
+            <article>
+                <div class="service-icon">
+                    <img class="card-images" src="images/hotel-icon.png" alt="Hotel Icon">
+                </div>
+                <div class="service-content">
+                    <h3>Hotel Deals</h3>
+                    <p>Handpicked hotels with exclusive deals for a comfortable stay.</p>
+                    <button id="hotel-deals-btn" class="without-bb-buttons">Find Hotels<img src="images/right-arrow-turq.png" alt="Right Arrow Icon" width="20px" height="20px"></button>
+                </div>
+            </article>
+        </section>
+        <h2 id="destinations" class="destinations-title">Popular Destinations</h2>
+        <section class="destinations-grid">
+            <figure>
+                <img class="cities-img" src="images/Riyadh-img.jpg" alt="Riyadh Image">
+                <figcaption><strong>Riyadh</strong><br>Modern city, rich culture, endless discovery.</figcaption>
+            </figure>
+            <figure>
+                <img class="cities-img" src="images/Cappadocia-img.jpg" alt="Cappadocia Image">
+                <figcaption><strong>Cappadocia</strong><br>Magical skies and timeless landscapes.</figcaption>
+            </figure>
+            <figure>
+                <img class="cities-img" src="images/Maldives-img.jpeg" alt="Maldives Image">
+                <figcaption><strong>Maldives</strong><br>Turquoise waters and pure relaxation.</figcaption>
+            </figure>
+        </section>
+        <section id="about-section">
+            <img id="about-main-img" src="images/explore-img.jpg" alt="Adventure Image">
+            <div class="about-content">
+                <h2>Why travel with us?</h2>
+                <div class="about-details">
+                    <p>At SkyRoute Travel, we believe every journey should be seamless and inspiring.
+                    Our team is here to handle the details, so you can focus on creating unforgettable memories.</p>
+                    <div id="about-icons">
+                        <div>
+                            <img class="about-img" src="images/www-icon.png" alt="WWW Icon">
+                            <p id="destinations-20">+20<br>destinations</p>
+                        </div>
+                        <div>
+                            <img class="about-img" src="images/headset-icon.png" alt="Headset Icon">
+                            <p id="star-5">5-star<br>support</p>
+                        </div>
+                        <div>
+                            <img class="about-img" src="images/calendar-icon.png" alt="Calendar Icon">
+                            <p id="flexible">Flexible<br>plans</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="contact" class="contact-section">
+            <div class="contact-content">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you! Whether you have a question about our tours or need help planning your next adventure,
+                    our team is here to help.</p>
+                <p>Email: info@skyroute.com</p>
+                <img id="contact-side-img" src="images/contact-img.png" alt="Contact Image">
+            </div>
+            <form class="contact-form" action="/contact" method="post">
+                <div class="contact-row">
+                    <div class="booking-field">
+                        <label for="contact-name">Full Name</label>
+                        <input id="contact-name" type="text" name="contact-name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="booking-field">
+                        <label for="contact-email">Email Address</label>
+                        <input id="contact-email" type="email" name="contact-email" placeholder="Enter your email address" required>
+                    </div>
+                </div>
+                <div class="booking-field">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" name="contact-message" placeholder="How can we help you?" required></textarea>
+                </div>
+                <div class="contact-bottom">
+                    <label>
+                        <input type="checkbox" name="privacy-policy" required>I agree to the Privacy Policy
+                    </label>
+                    <button id="contact-button" type="submit">Send Message</button>
+                </div>
+            </form>
+        </section>
+        <hr>
+        <section class="section-flex">
+            <section>
+                <img class="logo-img" src="images/SkyRoute-Travel-Logo.png" alt="Travel Agency Logo">
+                <p>Your journey. Our passion.<br>Explore more. Worry less.</p>
+            </section>
+            <section class="section-nav-flex">
+                <div class="div-flex-columns">
+                    <h2>About Us</h2>
+                    <a href="">About SkyRoute Travel</a>
+                    <a href="">Travel Blog</a>
+                    <a href="">Careers</a>
+                    <a href="">FAQs</a>
+                </div>
+                <div class="div-flex-columns">
+                    <h2>Support</h2>
+                    <a href="">Help Center</a>
+                    <a href="">Terms & Conditions</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Refund Policy</a>
+                </div>
+            </section>
+            <section>
+                <h2>Follow us</h2>
+                <a href="https://www.instagram.com/" target="_blank"><img class="social-media-icons" src="images/instagram-icon.png" alt="Instagram Icon"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img class="social-media-icons" src="images/youtube-icon.png" alt="Youtube Icon"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img class="social-media-icons" src="images/linkedin-icon.png" alt="LinkedIn Icon"></a>
+            </section>
+        </section>
+    </footer>
+    <hr>
+    <p class="copyright">&copy; 2024 SkyRoute Travel. All rights reserved.</p>
+</body>
+</html>

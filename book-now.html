@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✈️ SkyRoute Travel ✈️</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="booking-page">
+    <header>
+        <section class="first-row-header">
+            <img class="logo-img" src="images/SkyRoute-Travel-Logo.png" alt="Travel Agency Logo">
+            <nav id="header-nav">
+                <a href="index.html">Home</a>
+                <a href="index.html#destinations">Destinations</a>
+                <a href="index.html#about-section">About</a>
+                <a href="index.html#contact">Contact Us</a>
+            </nav>
+            <a id="book-button" class="active-book" href="book-now.html">Book Now</a>
+        </section>
+    </header>
+    <main class="booking-main">
+        <h1>Book Your Trip</h1>
+        <p>Fill in the details below and we'll help you plan your perfect journey.</p>
+        <section class="booking-section">
+           <form class="booking-form" action="/book" method="post">
+            <fieldset class="booking-row-two">
+                <div class="booking-field">
+                    <label for="full-name">Full Name</label>
+                    <input id="full-name" type="text" placeholder="Enter your name" name="full-name" required>
+                </div>
+                <div class="booking-field">
+                    <label for="email">Email Address</label>
+                    <input id="email" type="email" placeholder="Enter your email" name="email" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="booking-route">
+                    <div class="booking-field">
+                        <label for="departure-city">From</label>
+                        <input id="departure-city" type="text" placeholder="Departure City" name="departure-city" required>
+                    </div>
+                    <button type="button" class="without-bb-buttons"><img id="exchange-icon" src="images/exchange-icon.png" alt="Exchange Icon"></button>
+                    <div class="booking-field">
+                        <label for="destination-city">To</label>
+                        <input id="destination-city" type="text" placeholder="Destination City" name="destination-city" required>
+                    </div>
+                </div>
+                <div class="booking-details-row">
+                    <div class="booking-field">
+                        <label for="departure-date">Departure Date</label>
+                        <input id="departure-date" type="date" placeholder="Select date" name="departure-date" required>
+                    </div>
+                    <div class="booking-field">
+                        <label for="return-date">Return Date</label>
+                        <input id="return-date" type="date" placeholder="Select date" name="return-date" required>
+                    </div>
+                    <div class="booking-field">
+                        <label for="num-travelers">Travelers</label>
+                        <select id="num-travelers" name="num-travelers" required>
+                            <option value="" disabled selected>Select number of travelers</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>+5</option>
+                        </select>
+                    </div>
+                    <div class="booking-field">
+                        <label for="class">Class</label>
+                        <select id="class" name="class" required>
+                            <option value="" disabled selected>Select class</option>
+                            <option>Economy</option>
+                            <option>Business</option>
+                            <option>First Class</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="booking-field">
+                <label for="additional-req">Additional Requests (Optional)</label>
+                <textarea id="additional-req" name="additional-req" placeholder="Any special requests or notes?"></textarea>
+            </div>
+            <button id="submit-button" type="submit">Submit Booking<img id="submit-arrow" src="images/right-arrow-white.png" alt="White Arrow"></button>
+           </form> 
+        </section>
+    </main>
+    <hr>
+    <footer class="section-flex">
+        <section>
+            <img class="logo-img" src="images/SkyRoute-Travel-Logo.png" alt="Travel Agency Logo">
+            <p>Your journey. Our passion.<br>Explore more. Worry less.</p>
+        </section>
+        <section class="section-nav-flex">
+            <div class="div-flex-columns">
+                <h2>About Us</h2>
+                <a href="">About SkyRoute Travel</a>
+                <a href="">Travel Blog</a>
+                <a href="">Careers</a>
+                <a href="">FAQs</a>
+            </div>
+            <div class="div-flex-columns">
+                <h2>Support</h2>
+                <a href="">Help Center</a>
+                <a href="">Terms & Conditions</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Refund Policy</a>
+            </div>
+        </section>
+        <section>
+            <h2>Follow us</h2>
+            <a href="https://www.instagram.com/" target="_blank"><img class="social-media-icons" src="images/instagram-icon.png" alt="Instagram Icon"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img class="social-media-icons" src="images/youtube-icon.png" alt="Youtube Icon"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img class="social-media-icons" src="images/linkedin-icon.png" alt="LinkedIn Icon"></a>
+        </section>
+    </footer>
+    <hr>
+    <p class="copyright">&copy; 2024 SkyRoute Travel. All rights reserved.</p>
+</body>
+</html>
